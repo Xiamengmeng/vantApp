@@ -6,12 +6,22 @@ Vue.use(VueRouter);
 //routes 名字固定不能随意修改 和vue3一样
 const routes = [
 {path:'/',
-   redirect:'/home'
+   redirect:'/menuTips'
 },
 {
     path:'/menuTips',
     name:"menuTips",
     component:() => import ('@/views/menuTips.vue'),
+    
+    meta: {
+        isshowtabbar: true
+    }
+},
+{
+    
+    path:'/seniorSearch',
+    name:"seniorSearch",
+    component:() => import ('@/views/seniorSearch.vue'),
     
     meta: {
         isshowtabbar: true

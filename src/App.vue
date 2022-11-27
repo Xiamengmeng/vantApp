@@ -1,7 +1,7 @@
 <template>
   <div id="app">
    <!-- 定义一级路由的坑 -->
-   <NavBar/>
+   <!-- <NavBar/> -->
    <router-view></router-view>
    
    <!-- 底部的tabbar -->
